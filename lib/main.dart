@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-Color color; // values for change backgroundColor
+Color color; // Values for change backgroundColor
 
 void main() {
   runApp(MaterialApp(home: MyApp(), debugShowCheckedModeBanner: false));
@@ -29,8 +29,8 @@ class _MyAppState extends State<MyApp> {
       body: Center(
         child: GestureDetector(
           onTap: () => setState(
-                () => color = Color(// Generate random color
-                (math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
+            () => color = Color(// Generate random color
+                    (math.Random().nextDouble() * 0xFFFFFF).toInt() << 0)
                 .withOpacity(1.0),
           ),
           child: new Text(
